@@ -1,4 +1,4 @@
-# This is a main project file
+# This is a main
 resource "google_project" "my_project" {
   name            = "gcp-ctools"
   project_id      = "gcp-ctools"
