@@ -12,7 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@main
+    - uses: actions/setup-node@main
+      with:
+        node-version: '18.x.x'
+    - run: npm install
+    - run: npm run build:prod
     - name: Run a one-line script
       run: echo This is a test Github actions workflow!
     - name: TESTING multi-line script
