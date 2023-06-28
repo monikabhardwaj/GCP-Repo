@@ -16,7 +16,7 @@ jobs:
     - uses: actions/setup-node@main
       with:
         node-version: '18.x.x'
-    - run: npm install
+    - run: npm ci
     - run: npm run build:prod
     - name: Run a one-line script
       run: echo This is a test Github actions workflow!
